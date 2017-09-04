@@ -12,7 +12,7 @@ html {
 	width: 90%;
 	margin: 0 auto;
 	font-family: Verdana;
-	text-align: center;
+	text-align: left;
 }
 .wrapper input, .wrapper select {
 	padding: 1rem;
@@ -31,6 +31,7 @@ html {
 	background-color: royalblue;
 }
 .wrapper p {
+	text-align: left;
 	margin-bottom: 1rem;
 	font-size: 1.6rem;
 }
@@ -66,9 +67,11 @@ html {
 }
 .contactsBlock label {
 	margin: 1rem 0;
+	float: left;
 }
 .contactsBlock input {
-	margin: 0 auto;
+/*	margin: 0 auto;*/
+	width: 50%;
 }
 /*-------------------------------COUNTRIES----------------------------------*/
 .countriesBlock {
@@ -80,7 +83,7 @@ html {
 	width: 100%;
 	display: flex;
 	flex-flow: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 .counriesBlock__immigration .check {
 	text-align: left;
@@ -100,8 +103,8 @@ html {
 */
 }
 .aboutUser p {
-	text-align: center;
-	width: 100%;
+/*	text-align: center;*/
+/*	width: 100%;*/
 }
 .aboutUser__factors {
 	margin-bottom: 4rem;
