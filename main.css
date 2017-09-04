@@ -146,4 +146,9 @@ html {
 	.aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions, .aboutUser__age, .countriesBlock__live {
 		margin: 2rem auto;
 	}
+	.contactsBlock input {
+	/*	margin: 0 auto;*/
+		width: 100%;
+		width: 100%;
+	}
 }
