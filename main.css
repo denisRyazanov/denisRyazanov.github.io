@@ -72,31 +72,36 @@ html {
 }
 /*-------------------------------COUNTRIES----------------------------------*/
 .countriesBlock {
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-between;
 	margin-bottom: 2rem;
 	border-bottom: 1px solid grey;
 	padding-bottom: 2rem;
 }
-
-.counriesBlock__live {
-	margin-bottom: 2rem;
+.counriesBlock__immigration, .aboutUser__factors, .aboutUser__languages, .aboutUser__roots, .aboutUser__questions {
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
 }
-
 .counriesBlock__immigration .check {
 	text-align: left;
 	padding: .5rem;
 }
+
 .counriesBlock__immigration input {
 	margin-right: 1rem;
 	float: left;
 }
 /*---------------------------------------------------ABOUT USER----------------------------------------*/
 .aboutUser {
+/*
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-between;
+*/
+}
+.aboutUser p {
+	text-align: center;
+	width: 100%;
 }
 .aboutUser__factors {
 	margin-bottom: 4rem;
@@ -116,10 +121,8 @@ html {
 	width: 100%;
 	margin-bottom: 4rem;
 }
-.aboutUser__age {
-	margin-bottom: 2rem;
-}
-.aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions{
+
+.aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions, .aboutUser__age, .countriesBlock__live {
 	margin-bottom: 2rem;
 }
 /*------------------------------------------BORDER-----------------------------------------------*/
@@ -128,4 +131,16 @@ html {
 	display: block;
 	border-bottom: 1px solid grey;
 	margin-bottom: 2rem;
+}
+
+/*------------------------------------------------MEDIA----------------------------------------*/
+
+@media screen and (max-width: 768px){
+	.form {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions, .aboutUser__age, .countriesBlock__live {
+		margin: 2rem auto;
+	}
 }
