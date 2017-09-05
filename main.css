@@ -103,7 +103,7 @@ html {
 .aboutUser__factors {
 	margin-bottom: 4rem;
 }
-.aboutUser .check {
+.aboutUser .check, .aboutUser__subscribe .check {
 	text-align: left;
 	padding: .5rem;
 }
