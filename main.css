@@ -35,6 +35,9 @@ html {
 	margin-bottom: 1rem;
 	font-size: 1.6rem;
 }
+.wrapper .small {
+	font-size: 1.2rem;
+}
 
 /*------------------------------------------------Header--------------------------------------------*/
 .header {
