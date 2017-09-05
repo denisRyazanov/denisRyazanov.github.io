@@ -35,6 +35,9 @@ html {
 	margin-bottom: 1rem;
 	font-size: 1.6rem;
 }
+.wrapper select {
+	background-color: antiquewhite;
+}
 /*------------------------------------------------Header--------------------------------------------*/
 .header {
 	margin-bottom: 2rem;
@@ -69,22 +72,20 @@ html {
 	margin: 1rem 0;
 	float: left;
 }
-.contactsBlock input {
-/*	margin: 0 auto;*/
-	width: 50%;
-}
+
 /*-------------------------------COUNTRIES----------------------------------*/
 .countriesBlock {
 	margin-bottom: 2rem;
 	border-bottom: 1px solid grey;
 	padding-bottom: 2rem;
 }
-.counriesBlock__immigration, .aboutUser__factors, .aboutUser__languages, .aboutUser__roots, .aboutUser__questions {
+.countriesBlock__immigration, .aboutUser__factors, .aboutUser__languages, .aboutUser__roots, .aboutUser__questions {
 	width: 100%;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: flex-start;
 }
+
 .counriesBlock__immigration .check {
 	text-align: left;
 	padding: .5rem;
@@ -95,17 +96,7 @@ html {
 	float: left;
 }
 /*---------------------------------------------------ABOUT USER----------------------------------------*/
-.aboutUser {
-/*
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-between;
-*/
-}
-.aboutUser p {
-/*	text-align: center;*/
-/*	width: 100%;*/
-}
+
 .aboutUser__factors {
 	margin-bottom: 4rem;
 }
@@ -124,7 +115,9 @@ html {
 	width: 100%;
 	margin-bottom: 4rem;
 }
-
+.aboutUser__age input, .aboutUser__education select, .aboutUser__professions select, .aboutUser__experience input, .aboutUser__english select, .aboutUser__marriage select, .aboutUser__people input, .aboutUser__children input, .aboutUser__finance select, .contactsBlock input, .countriesBlock__live select {
+	width: 20%
+}
 .aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions, .aboutUser__age, .countriesBlock__live {
 	margin-bottom: 2rem;
 }
@@ -138,7 +131,7 @@ html {
 
 /*------------------------------------------------MEDIA----------------------------------------*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	.form {
 		width: 90%;
 		margin: 0 auto;
@@ -146,9 +139,14 @@ html {
 	.aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions, .aboutUser__age, .countriesBlock__live {
 		margin: 2rem auto;
 	}
-	.contactsBlock input {
-	/*	margin: 0 auto;*/
-		width: 100%;
-		width: 100%;
+
+	.aboutUser__age input, .aboutUser__education select, .aboutUser__professions select, .aboutUser__experience input, .aboutUser__english select, .aboutUser__marriage select, .aboutUser__people input, .aboutUser__children input, .aboutUser__finance select, .contactsBlock input, .countriesBlock__live select {
+		width: 100%
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.aboutUser__age input, .aboutUser__education select, .aboutUser__professions select, .aboutUser__experience input, .aboutUser__english select, .aboutUser__marriage select, .aboutUser__people input, .aboutUser__children input, .aboutUser__finance select, .contactsBlock input, .countriesBlock__live select {
+		width: 40%
 	}
 }
