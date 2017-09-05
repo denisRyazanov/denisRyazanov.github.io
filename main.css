@@ -9,13 +9,14 @@ html {
 }
 .wrapper {
 	font-size: 1.4rem;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	font-family: Verdana;
 	text-align: left;
 }
 .wrapper input, .wrapper select {
 	padding: 1rem;
+/*	height: 40px;*/
 	border: .1rem solid dodgerblue;
 	border-radius: 5px;
 }
@@ -35,28 +36,26 @@ html {
 	margin-bottom: 1rem;
 	font-size: 1.6rem;
 }
-.wrapper select {
-	background-color: antiquewhite;
-}
+
 /*------------------------------------------------Header--------------------------------------------*/
 .header {
 	margin-bottom: 2rem;
 }
 .header h1, .header h2 {
-	text-align: center;
+	text-align: left;
 }
 .header h1 {
-	font:400 2.4rem Verdana;
+	font:400 2rem Verdana;
 	margin-bottom: 2rem;
 	padding: 1rem;
 }
 .header h2 {
-	font:400 1.8rem Verdana;
+	font:400 1.6rem Verdana;
 	margin-bottom: 2rem;
 	padding: 1rem;
 }
 .form {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 }
 /*-------------------------------------CONTACTS------------------------------------------*/
@@ -86,11 +85,13 @@ html {
 	justify-content: flex-start;
 }
 
-.counriesBlock__immigration .check {
+.countriesBlock__immigration .check {
 	text-align: left;
 	padding: .5rem;
 }
-
+.countriesBlock__immigration .checkBlock, .aboutUser__languages .checkBlock{
+	margin-right: 4rem;
+}
 .counriesBlock__immigration input {
 	margin-right: 1rem;
 	float: left;
@@ -116,7 +117,8 @@ html {
 	margin-bottom: 4rem;
 }
 .aboutUser__age input, .aboutUser__education select, .aboutUser__professions select, .aboutUser__experience input, .aboutUser__english select, .aboutUser__marriage select, .aboutUser__people input, .aboutUser__children input, .aboutUser__finance select, .contactsBlock input, .countriesBlock__live select {
-	width: 20%
+	width: 20%;
+	height: 40px;
 }
 .aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions, .aboutUser__age, .countriesBlock__live {
 	margin-bottom: 2rem;
@@ -131,9 +133,12 @@ html {
 
 /*------------------------------------------------MEDIA----------------------------------------*/
 
-@media screen and (max-width: 767px){
-	.form {
+@media screen and (max-width: 767px) {
+	.wrapper {
 		width: 90%;
+	}
+	.form {
+		width: 100%;
 		margin: 0 auto;
 	}
 	.aboutUser__english, .aboutUser__experience, .aboutUser__people, .aboutUser__children, .aboutUser__languages, .aboutUser__marriage, .aboutUser__finance, .aboutUser__subscribe, .aboutUser__roots, .aboutUser__questions, .aboutUser__age, .countriesBlock__live {
