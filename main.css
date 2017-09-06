@@ -18,6 +18,7 @@ html {
 	padding: 1rem;
 	border: .1rem solid dodgerblue;
 	border-radius: 5px;
+	font-size: 1.6rem;
 }
 .wrapper .send {
 	background-color: dodgerblue;
