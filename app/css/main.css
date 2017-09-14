@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.header .logo p {
+  font: 3.6rem/2rem Verdana;
+  background: linear-gradient(45deg, #70269f 0%, #5df1f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table; }
