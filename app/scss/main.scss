@@ -1,20 +1,169 @@
+@font-face {
+	font-family: "LatoLight";
+	src: url("../assets/fonts/LatoLatinLight/LatoLatinLight.eot");
+	src: url("../assets/fonts/LatoLatinLight/LatoLatinLight.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/LatoLatinLight/LatoLatinLight.woff") format("woff"),
+		url("../assets/fonts/LatoLatinLight/LatoLatinLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "LatoRegular";
+	src: url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.eot");
+	src: url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.woff") format("woff"),
+		url("../assets/fonts/LatoLatinRegular/LatoLatinRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0; }
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
 
 html {
   font-size: 62.5%; }
+.wrapper {
+	font-family: "LatoLight";
+}
+.wrapper ul{
+	list-style: none;
+}
+.wrapper a{
+	text-decoration: none;
+	display: block;
+}
+.wrapper button {
+	border: none;
+	background: none;
+}
+.hidden {
+	display: none;
+}
+
+/*-----------------------------------FLEX-GRID-----------------------------*/
+.col-1 {
+	flex: 1;
+}
+.col-2 {
+	flex: 2;
+}
+.col-3 {
+	flex: 3;
+}
+.col-4 {
+	flex: 4;
+}
+.col-5 {
+	flex: 5;
+}
+.col-6 {
+	flex: 6;
+}
+.col-7 {
+	flex: 7;
+}
+.col-8 {
+	flex: 8;
+}
+.col-9 {
+	flex: 9;
+}
+.col-10 {
+	flex: 9;
+}
+.col-11 {
+	flex: 9;
+}
+.col-12 {
+	flex: 9;
+}
+/*-------------------------------------------end-----------------------------------------------*/
 
 .header {
-	.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1170px;
+	margin: auto;
+	padding: 2.8rem 0;
+//	margin-bottom: .5rem;
+	.header__logo {
+		margin-right: 31rem;
 		p {
-			font: 3.6rem/2rem Verdana;
+			padding: .5rem 0;
+			font: 3.6rem/2rem "LatoLight";
 			background: linear-gradient(45deg, #70269f 0%, #5df1f8 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			color: #0B2349;
-  			display: table;
+  			display: block;
 		}
 	}
+	.header__menu {
+		display: flex;
+		justify-content: flex-start;
+		li {
+			margin-right: 4.2rem;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				display: flex;
+				justify-content: flex-start;
+				p {
+				display: inline;
+				float: left;
+				margin-right: 5px;
+				font: 1.8rem/2rem "LatoLight";
+				color: #34383d;
+				&:hover {
+					color: #41bedd;
+				}
+				}
+				.chevron {
+					margin-top: 9px;
+				}
+			}
+		}
+	}
+	.header__search {
+		button:hover {
+			cursor: pointer;
+		}
+	}
+}
+.banner {
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	background: #466368;
+	background: -webkit-linear-gradient(#7b28b1, #35eef6);
+	background:    -moz-linear-gradient(#7b28b1, #35eef6);
+	background:         linear-gradient(to right, #7b28b1, #35eef6);
+	h1 {
+		font: 6rem/6rem  "LatoLight";
+		color: #fff;
+		padding-top: 105px;
+		margin-bottom: 1rem;
+	}
+	.banner__breadCrumbs {
+		width: 400px;
+		margin: 0 auto;
+			.banner__crumbs {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			li {
+				margin-right: 2rem;
+				a {
+					font: 1.6rem/2.4rem "LatoRegular";
+					color: #ecf0f1;
+				}
+			}
+		}
+	}
+
 }
