@@ -1,0 +1,32 @@
+doctype html
+
+include var/global.pug
+include var/mixins.pug
+
+html
+	include includes/head.pug
+	body 
+		div.wrapper
+			header.header
+				.logo
+					p illusion
+				nav
+					ul.menu
+						li
+							a(href="") Home
+						li
+							a(href="") Pages
+						li
+							a(href="") Portfolio
+						li
+							a(href="") Blog
+						li
+							a(href="") Features
+						li
+							a(href="") Shortcodes
+				.search
+					input(type="text")
+//						+ image("image4.jpg", "image4")
+//						h3.item__header Similique sunt in culpa qui officia 
+//						p.item__par Deserunt mollitia animi, id est laborum et dolorum fuga.
+//						a.item__link(href="") Read More
