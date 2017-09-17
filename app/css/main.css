@@ -123,7 +123,8 @@ html {
   background: #466368;
   background: -webkit-linear-gradient(#7b28b1, #35eef6);
   background: -moz-linear-gradient(#7b28b1, #35eef6);
-  background: linear-gradient(to right, #7b28b1, #35eef6); }
+  background: linear-gradient(to right, #7b28b1, #35eef6);
+  margin-bottom: 7rem; }
   .banner h1 {
     font: 6rem/6rem  "LatoLight";
     color: #fff;
@@ -141,3 +142,34 @@ html {
         .banner .banner__breadCrumbs .banner__crumbs li a {
           font: 1.6rem/2.4rem "LatoRegular";
           color: #ecf0f1; }
+
+.mainContent {
+  width: 550px;
+  margin: 0 auto;
+  margin-bottom: 3rem; }
+
+.mainContent__list {
+  display: flex; }
+  .mainContent__list li a {
+    font: 1.4rem/2.4rem "LatoRegular";
+    color: #34383d;
+    padding: .5rem 2.9rem;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey; }
+  .mainContent__list li a:hover {
+    color: #fff;
+    background-color: #41bedd; }
+  .mainContent__list li:nth-of-type(5) a {
+    border-right: 1px solid grey;
+    border-radius: 0 5px 5px 0; }
+  .mainContent__list li:nth-of-type(1) a {
+    border-radius: 5px 0 0 5px; }
+
+.masonryContainer {
+  max-width: 1170px;
+  margin: 0 auto; }
+  .masonryContainer .grid-item {
+    margin-bottom: 3rem; }
+    .masonryContainer .grid-item img {
+      border-radius: 5px; }

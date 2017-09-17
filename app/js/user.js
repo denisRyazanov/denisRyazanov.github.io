@@ -1,3 +1,7 @@
 $(document).ready(function() {
-	$(".grid").masonry
+	$(".grid").masonry({
+		itemSelector:'.grid-item',
+		columnWidth:50,
+		gutter:30
+	});
 });
