@@ -8,55 +8,59 @@ html
 	body 
 		.wrapper
 			header.header
-				.header__logo
-					a(href="")
-						p illusion
-				nav
-					ul.header__menu
-						li
-							a(href="")
-								p Home
-								.chevron
-									i.sprite.sprite-chevron
-						li
-							a(href="")
-								p Pages
-								.chevron
-									i.sprite.sprite-chevron
-						li
-							a(href="") 
-								p Portfolio
-								.chevron
-									i.sprite.sprite-chevron
-						li
-							a(href="")
-								p Blog
-								.chevron
-									i.sprite.sprite-chevron
-						li
-							a(href="") 
-								p Features
-								.chevron
-									i.sprite.sprite-chevron
-						li
-							a(href="") 
-								p Shortcodes
-								.chevron
-									i.sprite.sprite-chevron
-				.header__search
-					button.header__search_button
-						i.sprite.sprite-search
-					input.hidden(type="text")
+				.fixedTop
+					.header__logo
+						a(href="")
+							p illusion
+					nav
+						ul.header__menu
+							li
+								a(href="")
+									p Home
+									.chevron
+										i.sprite.sprite-chevron
+							li
+								a(href="")
+									p Pages
+									.chevron
+										i.sprite.sprite-chevron
+							li
+								a(href="") 
+									p Portfolio
+									.chevron
+										i.sprite.sprite-chevron
+							li
+								a(href="")
+									p Blog
+									.chevron
+										i.sprite.sprite-chevron
+							li
+								a(href="") 
+									p Features
+									.chevron
+										i.sprite.sprite-chevron
+							li
+								a(href="") 
+									p Shortcodes
+									.chevron
+										i.sprite.sprite-chevron
+					.header__search
+						button.header__search_button
+							i.sprite.sprite-search
+						input.hidden(type="text")
 			.banner
 				h1 3 Column Sortable Masonry Portfolio
 				.banner__breadCrumbs
 					ul.banner__crumbs
 						li
 							a(href="") Home
+								+ image("crumbs.png", "crumbs")
 						li
 							a(href="") Portfolio
+								+ image("crumbs.png", "crumbs")
 						li
 							a(href="") Sortable Masonry
+								+ image("crumbs.png", "crumbs")
 						li
 							a(href="") 3 Columns
 			.mainContent
@@ -71,26 +75,109 @@ html
 						a(href="") Photography
 					li
 						a(href="") Web
-			.masonryContainer
-				.grid
-					.grid-item
-						+ image("img1.jpg", "image1")
-					.grid-item
-						+ image("img2.jpg", "image2")
-					.grid-item
-						+ image("img3.jpg", "image3")
-					.grid-item
-						+ image("img7.jpg", "image7")
-					.grid-item
-						+ image("img5.jpg", "image5")
-					.grid-item
-						+ image("img4.jpg", "image4")
-					.grid-item
-						+ image("img6.jpg", "image6")
-
+				.masonryContainer
+					.grid
+						.grid-item
+							+ image("img1.jpg", "image1")
+						.grid-item
+							+ image("img2.jpg", "image2")
+						.grid-item
+							+ image("img3.jpg", "image3")
+						.grid-item
+							+ image("img7.jpg", "image7")
+						.grid-item
+							+ image("img5.jpg", "image5")
+						.grid-item
+							+ image("img4.jpg", "image4")
+						.grid-item
+							+ image("img6.jpg", "image6")
+				a.load(href="") Load More
+			footer.footer
+				.up 
+					a(href="#")
+						i.sprite.sprite-up.toup
+				.footerWrap
+					.aboutUs.col-3
+						h2 Shortly About Us
+						p Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Suspendisse sollicitudin velit sed leo. 
+					.contact.col-2
+						h2 Contact Us
+						i.sprite.sprite-phone
+						p (123)-456-7890
+						.clear
+						i.sprite.sprite-mail
+						p info@companyname.com
+						.clear
+						i.sprite.sprite-skype
+						p skype.name
+					.address.col-2
+						i.sprite.sprite-position
+						p 8901 Marmora Road,
+							br 
+							|Glasgow, D0489GR.
+						.clear
+						a(href="") Open in Google Maps
+					.connect.col-2
+						h2 Stay Connected
+						a(href="")
+							i.sprite.sprite-facebook.facebook
+						a(href="")
+							i.sprite.sprite-twitter.twitter
+						a(href="")
+							i.sprite.sprite-g_.g_
+						a(href="")
+							i.sprite.sprite-pinterest.pinterest
+						a(href="")
+							i.sprite.sprite-drible.drible
+						a(href="")
+							i.sprite.sprite-flick.flick
+						a(href="")
+							i.sprite.sprite-youtube.youtube
+						a(href="")
+							i.sprite.sprite-vimeo.vimeo
+						a(href="")
+							i.sprite.sprite-inst.inst
+						a(href="")
+							i.sprite.sprite-in.in
+				.arr
+					p © 2014 illusion. All Rights Reserved.
 	script(src="js/jquery-3.2.1.min.js")
 	script(src="js/masonry.pkgd.min.js")
 	script(src="js/user.js")
+	
+	
+//i.sprite.sprite-chevron
+//i.sprite.sprite-crumbs
+//i.sprite.sprite-drible
+//i.sprite.sprite-dribleC
+//i.sprite.sprite-facebook
+//i.sprite.sprite-facebookC
+//i.sprite.sprite-flick
+//i.sprite.sprite-flick_
+//i.sprite.sprite-g_
+//i.sprite.sprite-g_C
+//i.sprite.sprite-in
+//i.sprite.sprite-inC
+//i.sprite.sprite-inst
+//i.sprite.sprite-instC
+//i.sprite.sprite-mail
+//i.sprite.sprite-phone
+//i.sprite.sprite-pinterest
+//i.sprite.sprite-pinterestC
+//i.sprite.sprite-position
+//i.sprite.sprite-search
+//i.sprite.sprite-skype
+//i.sprite.sprite-twitter
+//i.sprite.sprite-twitterC
+//i.sprite.sprite-up
+//i.sprite.sprite-upC
+//i.sprite.sprite-vimeo
+//i.sprite.sprite-vimeoC
+//i.sprite.sprite-youtube
+//i.sprite.sprite-youtubeC
+
+	
+	
 //i.sprite.sprite-chevron
 //i.sprite.sprite-dribble
 //i.sprite.sprite-facebook
@@ -108,9 +195,3 @@ html
 //i.sprite.sprite-vimeo
 //i.sprite.sprite-youtube
 						
-						
-						
-	//						+ image("image4.jpg", "image4")
-	//						h3.item__header Similique sunt in culpa qui officia 
-	//						p.item__par Deserunt mollitia animi, id est laborum et dolorum fuga.
-	//						a.item__link(href="") Read More
