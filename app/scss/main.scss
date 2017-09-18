@@ -91,14 +91,14 @@ html {
 	z-index: 9999;
 	.fixedTop {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		padding: 2.8rem 0;
+//		padding: 2.8rem 0;
 		max-width: 1170px;
 		margin: 0 auto;
 	}
 	.header__logo {
-		margin-right: 31rem;
+		margin-right: 34rem;
 		p {
 			padding: .5rem 0;
 			font: 3.6rem/2rem "LatoLight";
@@ -112,12 +112,16 @@ html {
 	.header__menu {
 		display: flex;
 		justify-content: flex-start;
+//		position: relative;
 		li {
 			margin-right: 4.2rem;
+			position: relative;
 			&:last-child {
 				margin-right: 0;
 			}
 			a {
+				padding: 3.8rem 0;
+				position: relative;
 				display: flex;
 				justify-content: flex-start;
 				p {
@@ -134,9 +138,42 @@ html {
 				.chevron {
 					margin-top: 9px;
 				}
+				
+			}
+			&:hover {
+				border-bottom: 2px solid #3fb8d6;
+			}
+			&:hover .subMenu {
+				display: block;
 			}
 			&:last-child {
 				margin-right: 3rem;
+			}
+		}
+		.subMenu {
+			display: none;
+			position: absolute;
+			top: 9.8rem;
+			left: -20px;
+			background-color: #fff;
+			width: 220px;
+			li {
+				border-top: 1px solid grey;
+				width: 100%;
+				a {
+					padding: 0;
+				}
+				p {
+					font: 1.6rem/4.3rem "LatoLight";
+					color: #34383d;
+					padding-left: 2rem;
+				}
+				.chevron {
+					i {
+						transform: rotate(-90deg);
+						margin-top: 1.1rem;
+					}
+				}
 			}
 		}
 	}
@@ -233,6 +270,7 @@ html {
 		border: 1px solid grey;
 		border-radius: 5px;
 		margin-bottom: 7rem;
+		margin-top: 1.5rem;
 		&:hover {
 			background-color: #41bedd;
 			color: #fff;
