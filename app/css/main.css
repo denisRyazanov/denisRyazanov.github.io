@@ -234,6 +234,9 @@ html {
     right: 100px;
     top: 30px; }
   .footer .arr {
+    position: relative;
+    bottom: 0;
+    width: 100%;
     border-top: 1px solid #cbd0d4;
     background-color: #e3e7e9; }
     .footer .arr p {
@@ -282,3 +285,15 @@ html {
   .footer p {
     font: 1.6rem/2.4rem "LatoLight";
     color: #606366; }
+
+@media screen and (max-width: 767px) {
+  .header .fixedTop {
+    max-width: 767px; }
+  .header .header__menu {
+    display: none; }
+  .header .header__logo {
+    margin-right: 0; }
+  .masonryContainer .grid .grid-item img {
+    width: 320px; }
+  .mainContent__list {
+    flex-flow: column; } }
