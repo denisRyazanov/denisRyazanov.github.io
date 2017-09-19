@@ -12,6 +12,7 @@ html
 					.header__logo
 						a(href="")
 							p illusion
+					span.header__menuButton
 					nav
 						ul.header__menu
 							li
@@ -203,7 +204,7 @@ html
 					.header__search
 						button.header__search_button
 							i.sprite.sprite-search
-						input.hidden(type="text")
+						input.header__search_area(type="text")
 			.banner
 				h1 3 Column Sortable Masonry Portfolio
 				.banner__breadCrumbs
@@ -253,10 +254,10 @@ html
 					a(href="#")
 						i.sprite.sprite-up.toup
 				.footerWrap
-					.aboutUs.col-3
+					.aboutUs
 						h2 Shortly About Us
 						p Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia. Suspendisse sollicitudin velit sed leo. 
-					.contact.col-2
+					.contact
 						h2 Contact Us
 						i.sprite.sprite-phone
 						p (123)-456-7890
@@ -266,14 +267,14 @@ html
 						.clear
 						i.sprite.sprite-skype
 						p skype.name
-					.address.col-2
+					.address
 						i.sprite.sprite-position
 						p 8901 Marmora Road,
 							br 
 							|Glasgow, D0489GR.
 						.clear
 						a(href="") Open in Google Maps
-					.connect.col-2
+					.connect
 						h2 Stay Connected
 						a(href="")
 							i.sprite.sprite-facebook.facebook
