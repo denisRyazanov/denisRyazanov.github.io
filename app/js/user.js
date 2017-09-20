@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$(".grid").masonry({
 		itemSelector:'.grid-item',
-		columnWidth:100,
+//		columnWidth:100,
 		gutter:30
 	});
 	
@@ -108,11 +108,17 @@ $(document).ready(function() {
 		$(this).removeClass("sprite-upC");
 		$(this).addClass("sprite-up");
 	});
-	
-
 });
 
-
+$(document).ready(function() {
+	$('.header__menuButton').click(function() {
+		$('.header__menu').toggleClass('active');
+	});
+	$('.header__search_button').click(function() {
+		$('.header__search_area').toggleClass('activeSearch');
+	});
+//	$('.goDown a').mPageScroll2id();
+});
 
 
 
